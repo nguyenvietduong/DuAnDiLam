@@ -13,5 +13,9 @@
         "laravel-vite-plugin": "^1.0.0",
         "sass": "^1.56.1",
         "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-build-classic": "^43.1.1",
+        "@ckeditor/ckeditor5-upload": "^43.1.1"
     }
 }

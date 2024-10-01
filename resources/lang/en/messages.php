@@ -44,14 +44,6 @@ return [
         ],
         'table' => [
             'title'         => 'List Of',
-            'note'          => 'Note',
-            'text'          => 'If you want to edit data, double-click on a table row.',
-            'info'          => 'Showing _START_ to _END_ of _TOTAL_ entries',
-            'lengthMenu'    => 'Show _MENU_ entries',
-            'created_at'    => 'Created At',
-            'updated_at'    => 'Updated At',
-            'deleted_at'    => 'Deleted At',
-            'action'        => 'Action',
         ]
     ],
     'welcome'               => 'Welcome to our application!',
@@ -81,10 +73,125 @@ return [
         '4' => '“Good things come to those who wait, but only the things left by those who hustle.” - Abraham Lincoln',
         '5' => '“The only thing standing between you and your dream is the willingness to work for it.” - Joel Brown',
     ],
-    'role'  => [
-        'title'         => 'Roles',
-        'name'          => 'Role Name',
-        'account_count' => 'Account Count',
-        'account'       => 'Account',
-    ]
+    'account' => [
+        'role' => [
+            'user'      => 'User',
+            'sysadmin'  => 'Admin',
+        ],
+        'user' => [
+            'title' => 'Account User',
+            'index' => [
+                'route' => 'admin.user.index',
+            ],
+            'create' => [
+                'route' => 'admin.user.create',
+            ],
+            'store' => [
+                'route' => 'admin.user.store',
+            ],
+            'edit' => [
+                'route' => 'admin.user.edit',
+            ],
+            'update' => [
+                'route' => 'admin.user.update',
+            ],
+            'destroy' => [
+                'route' => 'admin.user.destroy',
+            ]
+        ],
+        'admin' => [
+            'title' => 'Account Admin',
+            'index' => [
+                'route' => 'admin.admin.index',
+            ],
+            'create' => [
+                'route' => 'admin.admin.create',
+            ],
+            'store' => [
+                'route' => 'admin.admin.store',
+            ],
+            'edit' => [
+                'route' => 'admin.admin.edit',
+            ],
+            'update' => [
+                'route' => 'admin.admin.update',
+            ],
+            'destroy' => [
+                'route' => 'admin.admin.destroy',
+            ]
+        ],
+    ],
+    'category' => [
+        'title' => 'Category',
+        'index' => [
+            'route' => 'admin.category.index',
+        ],
+        'create' => [
+            'route' => 'admin.category.create',
+        ],
+        'store' => [
+            'route' => 'admin.category.store',
+        ],
+        'edit' => [
+            'route' => 'admin.category.edit',
+        ],
+        'update' => [
+            'route' => 'admin.category.update',
+        ],
+        'destroy' => [
+            'route' => 'admin.category.destroy',
+        ]
+    ],
+    'tag' => [
+        'title' => 'Tag',
+        'index' => [
+            'route' => 'admin.tag.index',
+        ],
+        'create' => [
+            'route' => 'admin.tag.create',
+        ],
+        'store' => [
+            'route' => 'admin.tag.store',
+        ],
+        'edit' => [
+            'route' => 'admin.tag.edit',
+        ],
+        'update' => [
+            'route' => 'admin.tag.update',
+        ],
+        'destroy' => [
+            'route' => 'admin.tag.destroy',
+        ]
+    ],
+    'post' => [
+        'title' => 'Post',
+        'status_post' => [
+            'public'    => 'Public',
+            'draft'     => 'Draft'
+        ],
+        'index' => [
+            'route' => 'admin.post.index',
+        ],
+        'create' => [
+            'route' => 'admin.post.create',
+        ],
+        'store' => [
+            'route' => 'admin.post.store',
+        ],
+        'edit' => [
+            'route' => 'admin.post.edit',
+        ],
+        'update' => [
+            'route' => 'admin.post.update',
+        ],
+        'destroy' => [
+            'route' => 'admin.post.destroy',
+        ]
+    ],
+    'version' => '<b>Version</b> :version',
+    'copyright' => '<strong>Copyright © :year <a href=":link" title=":name" target="_blank">:name</a>.</strong> All rights reserved.',
+    'created' => 'Created successfully!',
+    'updated' => 'Updated successfully!',
+    'deleted' => 'Deleted successfully!',
+    'confirmDelete' => 'Are you sure you want to delete this item?',
 ];

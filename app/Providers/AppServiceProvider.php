@@ -17,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
         $services = [
             'App\Interfaces\Services\ImageServiceInterface'     => 'App\Services\ImageService',
             'App\Services\BaseService',
+
+            'App\Interfaces\Services\AccountServiceInterface'   => 'App\Services\AccountService',
+            'App\Interfaces\Services\CategoryServiceInterface'  => 'App\Services\CategoryService',
+            'App\Interfaces\Services\TagServiceInterface'       => 'App\Services\TagService',
+            'App\Interfaces\Services\PostServiceInterface'      => 'App\Services\PostService',
         ];
 
         foreach ($services as $interface => $implementation) {
