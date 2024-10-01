@@ -14,8 +14,10 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $repositories = [
-            \App\Interfaces\Repositories\AccountRepositoryInterface::class => \App\Repositories\AccountRepositoryEloquent::class,
-            \App\Interfaces\Repositories\RoleRepositoryInterface::class => \App\Repositories\RoleRepositoryEloquent::class,
+            \App\Interfaces\Repositories\AccountRepositoryInterface::class  => \App\Repositories\AccountRepositoryEloquent::class,
+            \App\Interfaces\Repositories\CategoryRepositoryInterface::class => \App\Repositories\CategoryRepositoryEloquent::class,
+            \App\Interfaces\Repositories\TagRepositoryInterface::class      => \App\Repositories\TagRepositoryEloquent::class,
+            \App\Interfaces\Repositories\PostRepositoryInterface::class     => \App\Repositories\PostRepositoryEloquent::class,
         ];
 
         foreach ($repositories as $interface => $implementation) {

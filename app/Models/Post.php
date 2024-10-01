@@ -2,14 +2,13 @@
 
 namespace App\Models;
 
-use App\Traits\QueryScopes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-    use HasFactory, QueryScopes, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
         'id',
@@ -18,7 +17,9 @@ class Post extends Model
         'title',
         'content',
         'status',
-        'views_count'
+        'views_count',
+        'created_at',
+        'updated_at',
     ];
 
     // Định nghĩa scope để truy vấn bài viết "hot"
